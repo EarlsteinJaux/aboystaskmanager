@@ -1,0 +1,52 @@
+<table class="table">
+  <thead>
+    <tr>
+      {{#each cols}}
+        <th scope="col">{{this}}</th>
+      {{/each}}
+    </tr>
+  </thead>
+  <tbody>
+    {{#each tasks}}
+      <tr>
+        <th scope="row">{{this.id}}</th>
+        <td>{{this.name}}</td>
+        {{#if this.completed}}
+          <td>Completed</td>
+        {{else}}
+          <td>Not Completed</td>
+        {{/if}}
+        <td>
+          <div class="dropdown">
+            <div
+              class="dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              &#x2802;&#x2802;&#x2802;
+            </div>
+            <ul class="dropdown-menu">
+              <li><button
+                  type="button"
+                  class="dropdown-item"
+                  onclick="completeTask({{this.id}}, {{this.completed}})"
+                >Mark as
+                  {{#if this.completed}}
+                    Not Completed
+                  {{else}}
+                    Completed
+                  {{/if}}
+                </button></li>
+              <li><button
+                  type="button"
+                  class="dropdown-item"
+                  onclick="removeTask({{this.id}})"
+                >Delete</button></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

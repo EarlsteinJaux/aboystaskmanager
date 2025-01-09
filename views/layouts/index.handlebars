@@ -1,1 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <script>
+      const removeTask = async (id) => {
+        const res = await fetch(`/api/tasks/${id}`, {
+          method: "DELETE",
+        });
 
+        if (res.ok) {
+          location.reload()
+        }
+        console.log(res)
+      };
+
+      const completeTask = async (id, completed) => {
+        const res = await fetch(`/api/tasks/${id}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ completed: !completed }),
+        });
+
+        if (res.ok) {
+          location.reload()
+        }
+        console.log(res)
+      };
+
+      const addTask = async (e) => {
+        const form = new FormData(e.target);
+        const body = {
+          name: form.get("name"),
+          completed: form.get("completed") === "on" ? 1 : 0,
+        }
+        const res = await fetch("/api/tasks", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(body),
+        });
+
+        if (res.ok) {
+          location.reload()
+        }
+        console.log(res)
+      };
+    </script>
+  </head>
+  <body>
+    {{{body}}}
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

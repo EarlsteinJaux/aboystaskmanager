@@ -81,7 +81,56 @@
             <th scope="col">Actions</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Finish report</td>
+            <td>Not Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(1, 'work')">Mark as Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(1, 'work')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Prepare presentation</td>
+            <td>Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(2, 'work')">Mark as Not Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(2, 'work')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Attend team meeting</td>
+            <td>Not Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(3, 'work')">Mark as Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(3, 'work')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
 
@@ -96,7 +145,56 @@
             <th scope="col">Actions</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Go to the gym</td>
+            <td>Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(1, 'personal')">Mark as Not Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(1, 'personal')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Buy groceries</td>
+            <td>Not Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(2, 'personal')">Mark as Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(2, 'personal')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Call mom</td>
+            <td>Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(3, 'personal')">Mark as Not Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(3, 'personal')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
 
@@ -111,7 +209,56 @@
             <th scope="col">Actions</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Buy new shoes</td>
+            <td>Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(1, 'shopping')">Mark as Not Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(1, 'shopping')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Buy groceries</td>
+            <td>Not Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(2, 'shopping')">Mark as Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(2, 'shopping')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Get birthday gift</td>
+            <td>Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(3, 'shopping')">Mark as Not Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(3, 'shopping')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
 
@@ -126,7 +273,56 @@
             <th scope="col">Actions</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Read a book</td>
+            <td>Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(1, 'other')">Mark as Not Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(1, 'other')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Clean the house</td>
+            <td>Not Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(2, 'other')">Mark as Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(2, 'other')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Visit the dentist</td>
+            <td>Not Completed</td>
+            <td>
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &#x2802;&#x2802;&#x2802;
+                </div>
+                <ul class="dropdown-menu">
+                  <li><button type="button" class="dropdown-item" onclick="toggleComplete(3, 'other')">Mark as Completed</button></li>
+                  <li><button type="button" class="dropdown-item" onclick="removeTask(3, 'other')">Delete</button></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
@@ -136,35 +332,27 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
   <script>
     let tasks = {
-      work: [],
-      personal: [],
-      shopping: [],
-      other: []
+      work: [
+        { id: 1, name: "Finish report", completed: false },
+        { id: 2, name: "Prepare presentation", completed: true },
+        { id: 3, name: "Attend team meeting", completed: false },
+      ],
+      personal: [
+        { id: 1, name: "Go to the gym", completed: true },
+        { id: 2, name: "Buy groceries", completed: false },
+        { id: 3, name: "Call mom", completed: true },
+      ],
+      shopping: [
+        { id: 1, name: "Buy new shoes", completed: true },
+        { id: 2, name: "Buy groceries", completed: false },
+        { id: 3, name: "Get birthday gift", completed: true },
+      ],
+      other: [
+        { id: 1, name: "Read a book", completed: true },
+        { id: 2, name: "Clean the house", completed: false },
+        { id: 3, name: "Visit the dentist", completed: false },
+      ],
     };
-    let taskId = 1;
-
-    function addTask(event) {
-      event.preventDefault();
-      
-      const name = document.getElementById('name').value;
-      const completed = document.getElementById('completed').checked;
-      const taskCategory = prompt("Enter task category (work, personal, shopping, other)").toLowerCase();
-
-      if (!tasks[taskCategory]) {
-        alert('Invalid category. Please enter one of: work, personal, shopping, other.');
-        return;
-      }
-
-      const newTask = { id: taskId++, name, completed };
-      tasks[taskCategory].push(newTask);
-      renderTasks();
-      
-      // Close modal and clear form
-      document.getElementById('name').value = '';
-      document.getElementById('completed').checked = false;
-      const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
-      modal.hide();
-    }
 
     function toggleComplete(taskId, category) {
       const task = tasks[category].find(t => t.id === taskId);
@@ -211,6 +399,9 @@
         });
       });
     }
+
+    renderTasks(); // Initial rendering of tasks
   </script>
 </body>
 </html>
+
